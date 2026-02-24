@@ -17,6 +17,8 @@ int main(void) {
 	while (1) { // 무한루프
 		// 스택 기능 구현
 		int menu, x;
+
+		menu = -1;
 		printf("현재 데이터수: %d / %d\n", Size(&st), Capacity(&st));
 		printf("(1)푸시, (2)팝, (3)피크, (4)출력, (0)종료 > "); scanf("%d", &menu);
 
