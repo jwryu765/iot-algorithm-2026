@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-unsigned long long factorial(int n);  // int factorial(int n) 와 비교
+	unsigned long long factorial(int n);  // int factorial(int n) 와 비교
 
 int main(void) {
 	int x;
