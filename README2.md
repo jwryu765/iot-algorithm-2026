@@ -113,11 +113,28 @@ https://school.programmers.co.kr/
 
 - 빌트인 데이터 타입 - [소스](./advanved/algorithm01/app01/app01.cpp)
 - STL - [소스](./advanved/algorithm01/app02/app02.cpp)
+
     - 특정 타입을 한정하지 않는 라이브러리
     - `컨테이너`, `알고리즘`, `반복자`
-- STL 컨테이너
-- STL 알고리즘
+    
+- STL 컨테이너 - C#, Java, Python에서 **Collection** 으로 호칭 [소스](./advanved/algorithm01/app03/app03.cpp)
+
+  - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크, ...
+  - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵, ...
+  - 어댑터 타입 - 스택, 큐, 우선순위 큐
+
+- STL 알고리즘 - 정렬, 검색 등 기본적인 알고리즘 [소스](./advanved/algorithm01/app04/app04.cpp)
+
+  - `find()`, `count()`, for_each(), equal(), any_of(), ...
+  - copy(), replace(), fill(), transform(), ...
+  - reverse(), remove(), `unique()`, rotate(), ...
+  - `sort()`, stable_sort(), partial_sort(), ...
+  - `binary_search()`, lower_bound(), upper_bound(), set_union(), ...
+  - `next_permutation()`, accumulate(), partial_sum(), ...
+  - `max_element()`, `min_element()`, clamp(), ...
+
 - 함수
+
 - 코딩 테스트 코드 구현 노하우
 
 ### 코딩 테스트 저자의 글

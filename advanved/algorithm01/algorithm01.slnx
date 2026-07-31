@@ -5,4 +5,6 @@
   </Configurations>
   <Project Path="app01/app01.vcxproj" Id="8b5be903-4469-4a5c-a0b4-70f4254725e4" />
   <Project Path="app02/app02.vcxproj" Id="a7b1d78f-f740-43fc-8b59-aae0ebd7033f" />
+  <Project Path="app03/app03.vcxproj" Id="9ae0b911-bafa-4ac2-b8da-ccee10d59832" />
+  <Project Path="app04/app04.vcxproj" Id="19d8ef41-cef4-415d-a315-af664a21f3c9" />
 </Solution>
