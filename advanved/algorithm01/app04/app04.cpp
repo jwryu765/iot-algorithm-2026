@@ -89,37 +89,37 @@ int main()
         cout << endl;
     } while (next_permutation(vec4.begin(), vec4.end()));
 
-    // unique() - 중복제거
+    // unique() - 중복제거 O(N)
     cout << "unique()" << endl;
 
-	vector<int> vec5 = { 1,2,2,3,3,3,4,4,5,5,5,6,6, };
+    vector<int> vec5 = { 1,2,2,3,3,3,4,4,5,5,5,6,6, };
 
-	auto newEnd = unique(vec5.begin(), vec5.end());
+    auto newEnd = unique(vec5.begin(), vec5.end());
 
     // 중복되지 않는 요소만 출력
     for (auto it = vec5.begin(); it != newEnd; it++) {
-		cout << *it << ". ";
+        cout << *it << ". ";
     }
     cout << endl;
 
-	// binary_search()  O(logN)
-	cout << "binary_search()" << endl;
+    // binary_search()  O(logN)
+    cout << "binary_search()" << endl;
 
-	vector<int> vec6 = { 1,2,3,4,5,6,7,8,9, 10,11,12,13,14,15 };
+    vector<int> vec6 = { 1,2,3,4,5,6,7,8,9, 10,11,12,13,14,15 };
 
-	cout << binary_search(vec6.begin(), vec6.end(), 3) << endl; // 1
-	cout << binary_search(vec6.begin(), vec6.end(), 17) << endl; // 0
+    cout << binary_search(vec6.begin(), vec6.end(), 3) << endl;  // 1
+    cout << binary_search(vec6.begin(), vec6.end(), 17) << endl;  // 0
 
-	// max_element(), min_element()  O(N)
-	cout << "max(min)_element()" << endl;
+    // max_element(), min_element()  O(N)
+    cout << "max(min)_element()" << endl;
 
-	vector<int> vec7 = { 1,3,5,7,2,4,6, 8 };
+    vector<int> vec7 = { 1,3,5,7,2,4,6, 8 };
 
-	auto maxIt = max_element(vec7.begin(), vec7.end());
-	auto minIt = min_element(vec7.begin(), vec7.end());
+    auto maxIt = max_element(vec7.begin(), vec7.end());
+    auto minIt = min_element(vec7.begin(), vec7.end());
 
-	cout << *maxIt << endl;  // 8
-	cout << *minIt << endl;  // 1
+    cout << *maxIt << endl;  // 8
+    cout << *minIt << endl;  // 1
 
     return 0;
 }
