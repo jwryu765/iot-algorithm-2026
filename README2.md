@@ -235,7 +235,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/81303?language=cpp
   - stack.pop() 값을 할당할 수 없음!  ~~`int r = stack.pop()`~~
   - stack.top() 으로 값을 가져온 뒤
   - stack.pop() 으로 스택값을 지워야 함
-  
+
 ![](assets/20260804_103543_image.png)
 
 교재에서는 $O(N)$ 으로 설명. $O(N logN)$ 정도로 예상
@@ -283,7 +283,6 @@ https://school.programmers.co.kr/learn/courses/30/lessons/159994?language=cpp
 - **해시** : 데이터를 빠르게 찾기 위한 기술
 - `딕셔너리` : 키(Key)-값(Value)로 저장하는 자료구조. 해시 테이블로 구현되어 있음
 
-
 #### 해시 함수
 
 키에 대한 인덱스를 구하는 함수
@@ -299,7 +298,6 @@ https://school.programmers.co.kr/learn/courses/30/lessons/159994?language=cpp
   - 공간활용도, 검색성능 떨어짐
 - 개방주소 : 해시테이블에 빈 행까지 이동, 값을 할당해서 충돌을 방지
 
-
 #### 모의 테스트
 
 완주하지 못한 선수 - [소스](./advanced/algorithm02/sol08-5-20/sol08-5-20.cpp)
@@ -312,7 +310,47 @@ https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=cpp
 
 2중 for문으로는 해결못함
 
+메뉴 리뉴얼 - [소스](./advanced/algorithm02/sol08-5-27/sol08-5-27.cpp)
 
+https://school.programmers.co.kr/learn/courses/30/lessons/72411
+
+![](assets/20260805_111437_image.png)
+
+- 재귀호출 디버깅 방법
+  - 재귀호출 함수 최초 호출하는 위치에 브레이크 포인트
+  - 모든 스텝은 F11로 진행
+  - 조사식을 최대한 활용
+  - 디버깅 후 -> 디버그 메뉴 > 창 > `병렬 스택` 선택
+  - 호출 스택을 사용해도 무방
+
+### 트리
+
+- 코딩테스트에서는 이진 트리만 알면 됨
+
+#### 트리 구현방법
+
+- 배열 : 구현 쉬움, 메모리공간 낭비. 인덱스 검색
+- 포인터 : 구현 어려움, 메모리낭비 거의 없음
+- 인접리스트 : 포인터에 비해 쉬움. 검색 어려움
+
+#### 이진 트리 검색
+
+- 해당 노드보다 작은 값은 왼쪽으로, 큰 값은 오른쪽으로 찾으면 됨
+- $O(log N)$ 정도의 시간복잡도를 가짐
+
+#### 몸풀기 문제
+
+트리 순회 - [소스](./advanved/algorithm02/sol09-4-28/sol09-4-28.cpp)
+
+- 트리 순회 : 재귀호출로 처리. 왼쪽, 오른쪽노드는 하위노드가 있을 수 있음
+  - 전위 순회 : 부모노드(리턴), 왼쪽노드(재귀), 오른쪽노드(재귀) 순서로 탐색
+  - 중위 순회 : 왼쪽노드(재귀), 부모노드(리턴), 오른쪽노드(재귀) 순서로 탐색
+  - 후위 순회 : 왼쪽노드(재귀), 오른쪽노드(재귀), 부모노드(리턴) 순으로 탐색
+  - 재귀 호출을 순서대로 변경
+
+![](assets/20260805_141108_image.png)
+
+#### 모의 테스트
 
 ### 코딩 테스트 준비물
 
